@@ -3,21 +3,21 @@
 ### API Side
 ```
 As a user,
-So I can see relevant air quality data to me,
-I want air quality data to be for my city
+So I know the current outdoor air quality of my city,
+I want AQI displayed along with the most recent PM10 reading and typical PM10 levels
 ```
 
 ```
 As a user,
-So I know how good or bad air quality in my city is,
-I want AQI displayed with a 'poor', 'average', or 'good' category
+So I can see relevant air quality data to me,
+I want air quality data to be for my local area
 ```
 
 ### Hardware Side
 ```
 As a user,
-So I know how good or bad my indoor air quality is,
-I would like AQI displayed with a 'poor', 'average', or 'good' category
+So I know the current indoor air quality of my house,
+I want AQI displayed along with the most recent PM10 reading and typical PM10 levels
 ```
 
 ```
