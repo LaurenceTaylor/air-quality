@@ -1,11 +1,7 @@
 function getPM10Data () {
-  const request = new XMLHttpRequest()
-  request.open('GET', 'http://api.erg.kcl.ac.uk/AirQuality/Data/Nowcast/lat=51.57661/lon=0.030858/Json')
-  request.onload = function () {
-    const data = JSON.parse(this.response).PointResult
-    setPM10Elements(data)
-  }
-  request.send()
+  fetch('http://api.erg.kcl.ac.uk/AirQuality/Data/Nowcast/lat=51.57661/lon=0.030858/Json')
+    .then(function(response) { return response.json() })
+    .then(function(data) { setPM10Elements(data.PointResult) })
 }
 
 function setPM10Elements (data) {
